@@ -1,8 +1,13 @@
 // Navigation code here
 .nav-container {
 	width: 100%;
-	background-color: @nav-bg;
+	//background-color: @nav-bg;
+	background-color: @nav-transparent-bg;
 	color: @river-bend;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid @nav-border;
 	nav {
 		padding: 5px 0 10px 0;
 		.flex-center();
@@ -11,6 +16,9 @@
 			color: @river-bend;
 			text-decoration: none;
 			font-size: 1.65rem;
+			&:hover {
+				color: lighten(@river-bend, 20%);
+			}
 		}
 	}
 }
