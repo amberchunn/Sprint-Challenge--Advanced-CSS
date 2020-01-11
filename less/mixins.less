@@ -2,6 +2,7 @@
 .button(@color, @bg, @fs) {
 	color: @color;
 	background-color: @bg;
+	border: 1px solid @border-real;
 	border-radius: 10px;
 	padding: 10px;
 	text-align: center;
@@ -9,7 +10,13 @@
 	font-size: @fs;
 	cursor: pointer;
 	&:hover {
-		background-color: lighten(@bg, 50%);
-		color: darken(@color, 75%);
+		background-color: lighten(@bg, 75%);
+		color: darken(@color, 100%);
+		border: 1px solid @river-bend;
 	}
+}
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
