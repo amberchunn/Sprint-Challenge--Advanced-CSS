@@ -344,6 +344,9 @@ h1 {
   width: 100%;
   text-align: center;
 }
+.about .intro img {
+  max-width: 100%;
+}
 .about .walk {
   border-top: 1px solid #dee2e6;
   padding: 30px 10px;
@@ -373,6 +376,18 @@ h1 {
 }
 .about .walk .walk-text p {
   margin-bottom: 26px;
+}
+.about .walk .walk-text .credit {
+  margin: 0 0 25px 0;
+  display: block;
+}
+.about .walk .walk-text .credit a {
+  font-size: 1.75rem;
+  color: #454a59;
+  text-decoration: none;
+}
+.about .walk .walk-text .credit a:hover {
+  color: lighter(#454a59, 50%);
 }
 .about .walk .walk-text .btn {
   color: #f1f1f1;

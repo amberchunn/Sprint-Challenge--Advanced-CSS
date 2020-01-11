@@ -14,6 +14,9 @@ h1 {
 			width: 100%;
 			text-align: center;
 		}
+		img {
+			max-width: 100%;
+		}
 	}
 
 	.walk {
@@ -39,10 +42,23 @@ h1 {
 			p {
 				margin-bottom: 26px;
 			}
+			.credit {
+				margin: 0 0 25px 0;
+				display: block;
+				a {
+					font-size: 1.75rem;
+					color: @river-bend;
+					text-decoration: none;
+					&:hover {
+						color: lighter(@river-bend, 50%);
+					}
+				}
+			}
 
 			.btn {
 				.button(@sea-shell, @btn-bg-color, 1.85rem);
 				max-width: 30%;
+
 				@media @phone {
 					max-width: 100%;
 					padding: 20px;
